@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link com Imagem</title>
+    <style>
+        #image {
+            display: none; /* A imagem começa oculta */
+            width: 100%;  /* Ou qualquer tamanho que você desejar */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Link que aparecerá como "ronnielessa.com" -->
+    <a href="javascript:void(0);" onclick="mostrarImagem()">ronnielessa.com</a>
+
+    <!-- Imagem com o link direto que você forneceu -->
+    <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Ronnie_Lessa%2C_1993%E2%80%931997_%28JPEG_version%29_%28cropped%29.jpg" alt="Imagem Exemplo">
+
+    <script>
+        function mostrarImagem() {
+            var img = document.getElementById("image");
+            img.style.display = "block"; // Exibe a imagem quando o link é clicado
+        }
+    </script>
+
+</body>
+</html>
